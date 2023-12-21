@@ -113,10 +113,10 @@ h3 {
   padding: 1rem;
 }
 .producto__nombre {
-  font-size: 4rem;
+  font-size: 2.8rem;
 }
 .producto__precio {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   color: var(--secundario);
 }
 .producto__nombre,
@@ -200,9 +200,17 @@ h3 {
 }
 
 .formulario {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+@media (min-width: 768px) {
+  .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 .formulario__campo {
   border-color: var(--primarioO);
@@ -210,7 +218,7 @@ h3 {
   border-style: solid;
   /*border: 1rem solid var(--primarioO);*/ /*ancho tipo color*/
   background-color: transparent;
-  color: var(--blanco);
+  color: var(--negro);
   font-size: 2rem;
   font-family: Arial, Helvetica, sans-serif;
   appearance: none;
